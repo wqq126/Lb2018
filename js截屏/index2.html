@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+
+	<body>
+		<div style="background: red;width: 68px;text-align: center;" onclick="doScreenShot()">截图</div>
+		<!-- 要截图的div  sfeg -->
+		<div id="main" style="width: 98%;padding: 50px;background: #5a90a0">
+
+			<div id="sfeg" style="width: 800px;max-height: 2000px;overflow: auto;background: #fff"> </div>
+		</div>
+		<!--展示的div-->
+		<div id="dw">
+
+			<div class="offno" title="关闭" onclick="closeok()">
+				<div class="close"></div>
+			</div>
+
+			<div id="imgcanvas"></div>
+		</div>
+	</body>
+	<script src="html2canvas.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		(function start() {
+				$("#dw").hide();
+				var maindiv = document.getElementById('sfeg');
+				for(var i = 0; i < 20; i++) {
+					var jeq = '<div  style="margin:4px 2px auto;background:blue;width:300px;height:60px">' + i + '</div>';
+					$(maindiv).append(jeq);
+				}
+			}
+			()
+		)
+		//截图
+		function doScreenShot() {
+			$("#dw").show();
+			$("#imgcanvas").empty();
+			html2canvas($("#sfeg"), {
+				onrendered: function(canvas) {
+					canvas.id = "mycanvas";
+					var mainwh = $("#main").width(); //获取元素的宽
+					var mainhg = $("#main").height(); //获取元素高，若是做长图可以将此参数传递给canvas的高
+					var img = convertCanvasToImage(canvas);
+
+					$("#imgcanvas").append(img); //添加到展示图片div区域
+					img.onload = function() {
+						img.onload = null;
+						canvas = convertImageToCanvas(img, 0, 0, mainwh, mainhg); //设置图片大小和位置  
+						img.src = convertCanvasToImage(canvas).src; //重新给了一个路径，若不需要，则和上面那句都可以注释掉。
+						$(img).css({
+							background: "#fff"
+						});
+						//调用下载方法    
+						if(browserIsIe()) { //假如是ie浏览器                
+							DownLoadReportIMG('下载.jpg', img.src);
+						} else {
+							download(img.src) //下载图片
+						}
+					}
+				}
+			});
+		}
+		//绘制显示图片 
+		function convertCanvasToImage(canvas) {
+			var image = new Image();
+			image.src = canvas.toDataURL("image/png"); //生成图片地址
+			return image;
+		}
+		//生成canvas元素
+		function convertImageToCanvas(image, startX, startY, width, height) {
+			var canvas = document.createElement("canvas");
+			canvas.width = width;
+			canvas.height = height;
+			canvas.getContext("2d").drawImage(image, startX, startY, width, height, 0, 0, width, height); //在这调整图片中内容的显示（大小,放大缩小,位置等）
+			return canvas;
+		} // 另存为图片
+		function download(src) {
+			var $a = $("<a></a>").attr("href", src).attr("download", "img.png");
+			$a[0].click();
+		}
+		//判断是否为ie浏览器
+		function browserIsIe() {
+			if(!!window.ActiveXObject || "ActiveXObject" in window)
+				return true;
+			else
+				return false;
+		}
+
+		function DownLoadReportIMG(fileName, imgPathURL) {
+			var blob = base64Img2Blob(imgPathURL);
+			//ie11及以上
+			window.navigator.msSaveBlob(blob, fileName);
+		}
+
+		function base64Img2Blob(code) {
+			var parts = code.split(';base64,');
+			var contentType = parts[0].split(':')[1];
+			var raw = window.atob(parts[1]);
+			var rawLength = raw.length;
+			var uInt8Array = new Uint8Array(rawLength);
+			for(var i = 0; i < rawLength; ++i) {
+				uInt8Array[i] = raw.charCodeAt(i);
+			}
+			return new Blob([uInt8Array], {
+				type: contentType
+			});
+		}
+	</script>
+
+</html>
