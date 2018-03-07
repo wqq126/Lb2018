@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>日志管理</title>
+		<link rel="stylesheet" type="text/css" href="../css/xcConfirm.css?v=4bf4166437" />
+		<link rel="stylesheet" type="text/css" href="../css/basic.css?v=cf9b0dd03b" />
+		<link rel="stylesheet" type="text/css" href="../datetimepicker/jquery.datetimepicker.css" />
+		<link rel="stylesheet" type="text/css" href="../css/transcoding.css?v=53d2e789e4" />
+	</head>
+
+	<body>
+		<div class="contain">
+			<div class="header">
+				<span>
+					日志查看
+				</span>
+			</div>
+			<div class="searchBox">
+				<span class="selectbox startTime">
+					<span class="title">开始日期</span>
+				<input type="text" class="demo-input" placeholder="请选择日期" id="startTime">
+				</span>
+				<span class=" selectbox endTime">
+					<span class="title">结束日期</span>
+				<input type="text" class="demo-input" placeholder="请选择日期" id="endTime">
+				</span>
+				<span class="mybtn searchLog">搜索</span>
+				<img class="showdown" src="../../html/img/loading2.gif?v=805d952d3b" />
+				<button class="mybtn reloadBtn">刷新</button>
+			</div>
+			<div class="main">
+				<div class="tableBox">
+					<ul class="ul_table">
+						<li class="theader clearfix">
+							<span style="width: 7%;">序号</span>
+							<span style="width: 26%;">名称</span>
+							<span style="width: 31%;">状态</span>
+							<span style="width: 18%;">开始时间</span>
+							<span style="width: 18%;">预计结束时间</span>
+						</li>
+					</ul>
+					<ul class="ul_tbody">
+						<!--<li class='theader clearfix'>
+							<span style='width: 7%;'>1</span>
+							<span style='width: 26%;'>星际迷航1</span>
+							<span style='width: 31%;'>转码中
+								<i class='myRange'>
+									<i class='myRangeValue'></i>
+								</i>	
+								<i class='transcPer' style='width: 80%;'>80%</i>
+							</span>
+							<span style='width: 18%;'>2017-12-05&nbsp;&nbsp;12:20</span>
+							<span style='width: 18%;'>2017-12-05&nbsp;&nbsp;13:20</span>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="pages clearfix">
+				<div class="fl"> <span>共</span> <span class="count">0</span><span>条</span>
+					<span class="nowPage">1</span>/<span class="allPage">1</span>
+				</div>
+				<div class="fr">
+					<div class="page" style="height: 36px;"></div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="loadingAlert">
+			<img src="../img/loading.gif?v=d0c438ea4e" />
+		</div>
+	</body>
+	<script src="../crypto/core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/hmac.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/sha256.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/enc-base64.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../js/plugins/jquery/jquery-3.2.1.min.js?v=c9f5aeeca3" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/plugins/jquery/jquery-1.10.2.min.js?v=e0e0559014" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common/config.js?v=c6b6dc5ca4" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/xcConfirm.js?v=a6850f5ac3" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/plugins/jquery.page.js?v=7d972c7ba3" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common/common.js?v=3c9c940887" type="text/javascript" charset="utf-8"></script>
+	<script src="../datetimepicker/build/jquery.datetimepicker.full.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../jcFilter/js/awesomplete.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/transcoding.js?v=adde41fdd4" type="text/javascript" charset="utf-8"></script>
+
+</html>

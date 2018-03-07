@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>点播资源类型管理</title>
+		<link rel="stylesheet" type="text/css" href="../css/xcConfirm.css?v=4bf4166437" />
+		<link rel="stylesheet" type="text/css" href="../css/basic.css?v=cf9b0dd03b" />
+		<link rel="stylesheet" type="text/css" href="../css/typeManager.css?v=4c0a953fe2" />
+	</head>
+
+	<body>
+		<div class="contain">
+			<div class="header">
+				<span>点播资源类型管理</span>
+			</div>
+			<div class="buttonBox isHasEdit">
+				<button class="mybtn add addbutton"><img src="../img/add.png?v=536628c55f"/>增加</button>
+			</div>
+			<div class="main">
+				<div class="tableBox">
+					<ul class="ul_table">
+						<li class="theader clearfix">
+							<span style="width: 22%;">序号</span>
+							<span style="width: 26%;">类型</span>
+							<span style="width: 26%;">状态</span>
+							<span style="width: 26%;">操作</span>
+						</li>
+					</ul>
+					<ul class="ul_tbody">
+					</ul>
+				</div>
+			</div>
+			<div class="pages clearfix">
+				<div class="fl">
+					共 <span class="count">0</span>条
+					<span class="nowPage">1</span>/<span class="allPage">1</span>
+				</div>
+				<div class="fr">
+					<div class="page" style="height: 36px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="alert">
+			<div class="alertMain clearfix">
+				<p class="title">增加
+				</p>
+				<div class="fl clearfix alertleft">
+					<div class="inputBox">
+						<div>
+							<label for="">类型:</label>
+							<input autofocus="autofocus" id="classificationName" type="text" />
+							<p class="errorMessage"></p>
+
+						</div>
+						<div class="buttonBox">
+							<button class="mybtn save">保存</button>
+							<button class="mybtn canclealert">取消</button>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="loadingAlert">
+			<img src="../../html/img/loading.gif?v=d0c438ea4e" />
+		</div>
+	</body>
+
+	<script src="../crypto/core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/hmac.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/sha256.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/enc-base64.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../js/plugins/jquery/jquery-3.2.1.min.js?v=c9f5aeeca3" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/plugins/jquery/jquery-1.10.2.min.js?v=e0e0559014" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common/config.js?v=c6b6dc5ca4" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/xcConfirm.js?v=a6850f5ac3" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common/common.js?v=3c9c940887" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/plugins/jquery.page.js?v=7d972c7ba3" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/typeManager.js?v=c25ec84953" type="text/javascript" charset="utf-8"></script>
+
+</html>

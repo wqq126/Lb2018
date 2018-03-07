@@ -1,0 +1,159 @@
+html {
+  height: 99%;
+}
+body {
+  font-family: "微软雅黑";
+  height: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+.boxSing {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+select {
+  font-size: 1em;
+}
+.contain {
+  height: 100%;
+  border: 1px solid #B4B4B4;
+  margin-left: 8px;
+  margin-right: 20px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contain .header {
+  height: 4%;
+  color: #414141;
+  font-size: 16px;
+  position: relative;
+  border-bottom: 1px solid #b4b4b4;
+  background: -webkit-linear-gradient(#fffffe, #ededed);
+  background: -o-linear-gradient(#fffffe, #ededed);
+  background: -moz-linear-gradient(#fffffe, #ededed);
+  background: linear-gradient(#fffffe, #ededed);
+}
+.contain .header span {
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 30px;
+}
+.contain .buttonBox {
+  height: 9%;
+  font-size: 1em;
+  text-align: right;
+  position: relative;
+}
+.contain .buttonBox button {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.contain .main {
+  width: 100%;
+  padding: 0 20px;
+  height: 80%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.contain .main .tableBox {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  height: 100%;
+}
+.contain .main .tableBox .ul_table {
+  width: 100%;
+  height: 5%;
+  font-size: 1em;
+  background: darkgray;
+}
+.contain .main .tableBox .ul_table li {
+  width: 100%;
+  height: 100%;
+}
+.contain .main .tableBox .ul_table li span {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  display: inline-block;
+  border-right: 1px solid white;
+  text-indent: 10px;
+  font-size: 1em;
+  height: 1.5em;
+  line-height: 1.5em;
+  position: relative;
+  top: 50%;
+  margin-top: -0.75em;
+  white-space: nowrap;
+}
+.contain .main .tableBox .ul_table .theader {
+  background: #e7edf2;
+}
+.alert {
+  display: none;
+  background: rgba(145, 145, 145, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.alert .alertMain {
+  width: 400px;
+  height: 300px;
+  border: 1px solid #B4B4B4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -200px;
+  background: white;
+}
+.alert .alertMain .title {
+  position: relative;
+  font-size: 1em;
+  height: 50px;
+  text-indent: 30px;
+  line-height: 50px;
+  color: #414141;
+  border-bottom: 1px solid #B4B4B4;
+  margin-bottom: 20px;
+}
+.alert .alertMain .alertleft {
+  width: 100%;
+}
+.alert .alertMain .alertleft label {
+  display: inline-block;
+  text-indent: 30px;
+  width: 100px;
+  height: 44px;
+  line-height: 44px;
+  color: #595959;
+}
+.alert .alertMain .alertleft input {
+  width: 160px;
+  height: 40px;
+}
+.alert .alertMain .alertleft .errorMessage {
+  color: red;
+  height: 20px;
+  text-indent: 100px;
+  margin-top: 10px;
+}
+.alert .alertMain .alertleft .buttonBox {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+.alert .alertMain .alertleft .buttonBox button:first-child {
+  margin-right: 30px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>IPTV管理系统</title>
+		<link rel="stylesheet" type="text/css" href="css/xcConfirm.css?v=4bf4166437" />
+		<link rel="stylesheet" type="text/css" href="css/basic.css?v=cf9b0dd03b" />
+		<link rel="stylesheet" type="text/css" href="css/iptvManager.css?v=597b3c65de" />
+	</head>
+
+	<body>
+		<div class="contain">
+			<div class="header clearfix">
+				<div class="fl">
+					<span>LonBon</span>
+					<span>来邦科技</span>
+				</div>
+				<div class="fr">
+					<img src="img/admin.png?v=2a3be4b2c9" class="adminPng" alt="" />
+					<span class="showusername">admin</span>
+					<img class="showcountInfo" src="img/downnormal.png?v=d4210dce97" alt="" />
+					<div class="showalert">
+						<p class="showtime">2017-11-5 12:30</p>
+						<p class="changePassword">更改密码</p>
+						<p class="logOut">注销</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="main clearfix">
+				<div class="slider fl">
+					<li class="active" id="home">
+						<span normal-bgurl="img/ftp-normal1.png?v=fb977489e2" click-bgurl="img/ftp-click1.png?v=b416299c1c" class="channel"></span>
+						<a iframSrc="font/ftp.html">首页</a>
+					</li>
+					<li id="live"><span normal-bgurl="img/live-normal.png?v=a93a7dc162" click-bgurl="img/live-click.png?v=8164ef8feb" class="film"></span>
+						<a>直播频道</a>
+						<img class="shouwDown" src="img/bardowm.png?v=4f1f278c00" />
+						<ul class="ulbox">
+							<li iframSrc="font/liveSource.html">
+								<a>直播资源</a>
+							</li>
+							<li iframSrc="font/classification.html">
+								<a>分类管理</a>
+							</li>
+						</ul>
+					</li>
+					<li id="channel"><span normal-bgurl="img/channel-normal.png?v=d740df9a77" click-bgurl="img/channel-click.png?v=801fb8841f" class="tv-play"></span>
+						<a>点播资源</a>
+						<img class="shouwDown" src="img/bardowm.png?v=4f1f278c00" />
+						<ul class="ulbox">
+							<li iframSrc="font/fileSource.html">
+								<a>资源上传</a>
+							</li>
+							<li iframSrc="font/manageSource.html">
+								<a>资源管理</a>
+							</li>
+							<li iframSrc = 'font/transcoding.html'>
+								<a>转码列表</a>
+							</li>
+							<li iframSrc="font/channel.html">
+								<a>分类管理</a>
+							</li>
+							<li iframSrc="font/typeManager.html">
+								<a>类型管理</a>
+							</li>
+						</ul>
+					</li>
+					<li id="user" class="adminShow"><span normal-bgurl="img/touxiang.png?v=4f3751f206" click-bgurl="img/touxiang-click.png?v=5e034f6990" class="user"></span>
+						<a>用户管理</a>
+						<img class="shouwDown" src="img/bardowm.png?v=4f1f278c00" />
+						<ul class="ulbox">
+							<li iframSrc="font/user.html">
+								<a>用户</a>
+							</li>
+							<li iframSrc="font/usergroup.html">
+								<a>用户组</a>
+							</li>
+						</ul>
+					</li>
+					<li id="setting"><span normal-bgurl="img/setting-normal.png?v=9ca4f6c2b8" click-bgurl="img/setting-click.png?v=edf193db58" class="setting"></span>
+						<a>高级管理</a>
+						<img class="shouwDown" src="img/bardowm.png?v=4f1f278c00" />
+						<ul class="ulbox">
+							<li class="isHasSystem" iframSrc="font/log.html">
+								<a>日志查看</a>
+							</li>
+							<li iframSrc="font/setting.html">
+								<a>设置</a>
+							</li>
+						</ul>
+					</li>
+				</div>
+				<div class="main_right fr">
+					<iframe id="iframe" src="font/ftp.html" width="100%" height="100%"></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="changealert">
+			<div class="alertmain">
+				<div>
+					<label for="">原密码:</label>
+					<input id="oldP" type="password" />
+					<p class="error errorold">账号错误</p>
+				</div>
+				<div>
+					<label for="">新密码:</label>
+					<input id="newP" type="password" />
+					<p class="error newpError">账号错误</p>
+				</div>
+				<div>
+					<label for="">确认密码:</label>
+					<input id="newPt" type="password" />
+					<p class="error newptError">账号错误</p>
+				</div>
+				<div class="clearfix buttonbox">
+					<button class="fl save mybtn">确定</button>
+					<button class="fr cancel mybtn">取消</button>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="crypto/core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="crypto/hmac.js" type="text/javascript" charset="utf-8"></script>
+	<script src="crypto/sha256.js" type="text/javascript" charset="utf-8"></script>
+	<script src="crypto/enc-base64.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/plugins/jquery/jquery-3.2.1.min.js?v=c9f5aeeca3" type="text/javascript" charset="utf-8"></script>
+	<script src="js/xcConfirm.js?v=a6850f5ac3" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common/config.js?v=c6b6dc5ca4" type="text/javascript" charset="utf-8"></script>
+	<script src="js/plugins/jquery/jquery-1.10.2.min.js?v=e0e0559014" type="text/javascript" charset="utf-8"></script>
+	<script src="js/common/common.js?v=3c9c940887" type="text/javascript" charset="utf-8"></script>
+	<script src="js/iptvManager.js?v=9bb0ca8209" type="text/javascript" charset="utf-8"></script>
+
+</html>

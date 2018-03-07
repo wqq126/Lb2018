@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>点播资源管理</title>
+		<link rel="stylesheet" type="text/css" href="../css/xcConfirm.css?v=4bf4166437" />
+		<link rel="stylesheet" type="text/css" href="../css/basic.css?v=cf9b0dd03b" />
+		<link rel="stylesheet" href="../css/managerSource.css?v=3eaa3670e5">
+		<link rel="stylesheet" type="text/css" href="../css/test.css?v=bcfd762ad5"/>
+	</head>
+
+	<body>
+		<div class="contain">
+			<div class="header">
+				<span>点播资源管理</span>
+			</div>
+			<div class="searchBox clearfix">
+				<div class="fl selectbox channelBox">
+					<label class="title" for="">分类</label>
+					<input readonly="readonly" id="classificationInput" type="text" value="全部" />
+					<img src="../img/select-downNormal.png?v=9e90a801de" class="showclassificationSelect" />
+					<!--<select name="" id="classificationSelect">
+						<option value="">全部</option>
+					</select>-->
+					<ul id="classificationSelect" class="selectUl">
+						<li>全部</li>
+					</ul>
+				</div>
+				<div class="fl selectbox typeboxSearch">
+					<label class="title" for="">类型</label>
+					<input readonly="readonly" id="typeInput" type="text" value="全部" />
+					<img src="../img/select-downNormal.png?v=9e90a801de" class="showtypeSelect" />
+					<!--<select name="" id="typeSelect">
+						<option value="">全部</option>
+					</select>-->
+					<ul id="typeSelect" class="selectUl">
+						<li>全部</li>
+					</ul>
+				</div>
+			</div>
+			<div class="main">
+				<div class="tableBox">
+					<ul class="ul_table">
+						<li class="theader clearfix">
+							<span style="width: 7%;">序号</span>
+							<span style="width: 25%;">名称</span>
+							<span style="width: 15%;">分类</span>
+							<span style="width: 15%;">地区</span>
+							<span style="width: 22%;">导演</span>
+							<span style="width: 16%;">操作</span>
+						</li>
+					</ul>
+					<ul class="ul_tbody mangerList">
+
+					</ul>
+				</div>
+
+			</div>
+			<div class="pages clearfix">
+				<div class="fl">
+					共 <span class="count">0</span>条
+					<span class="nowPage">1</span>/<span class="allPage">1</span>
+				</div>
+				<div class="fr">
+					<div class="page" style="height: 36px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="scanningAlert">
+			<div class="scanningAlert_main">
+				<p class="title"> 编辑点播资源 </p>
+				 <img class="canclealerIMng cancle" src="../img/cancle.png?v=cf325ec93b" alt="" />
+				<div class="main_top clearfix">
+					<div class="fl clearfix">
+						<div class="fl leftThree">
+							<div class="alertInputBox clearfix labelBox" >
+								<label  for=""><i>*</i>名称:</label>
+								<input id="scanningAlert_name" type="text" />
+								<div class="error errorName">不能为空</div>
+							</div>
+							<div class="alertInputBox clearfix labelBox fenlei" style="z-index: 9999;">
+								<label for=""><i>*</i>分类:</label>
+								<input type="text" id="scanningAlertInput" />
+								<img src="../img/select-downNormal.png?v=9e90a801de" alt="" class="showscanningAlertChannel" />
+								<ul id="scanningAlertChannel" class="selectUl">
+									<option>请选择一个分类</option>
+								</ul>								
+								<div class="error">不能为空</div>
+							</div>
+							<div class="alertInputBox clearfix leixing fenlei labelBox" style="z-index: 999;">
+								<label for=""><i>*</i>类型:</label>
+								<input type="text" readonly="readonly" id='scanningAlertTypeInput' />
+								<img src="../img/select-downNormal.png?v=9e90a801de" alt="" class="showscanningAlert_typebox" />
+								<div class="scanningAlert_typebox">
+								</div>
+								<div class="error errorType">不能为空</div>
+							</div>
+						</div>
+						<div class="fr rightThree">
+							<div class="alertInputBox clearfix labelBox">
+								<label for="">导演:</label>
+								<input id="scanningAlertDire" type="text" />
+								<div class="error errorDirectories">不能为空</div>
+							</div>
+							<div class="alertInputBox clearfix labelBox">
+								<label for="">年代:</label>
+								<input id="scanningAlertYear" type="text" />
+								<div class="error errorYear">不能为空</div>
+							</div>
+							<div class="alertInputBox clearfix labelBox">
+								<label for="">地区:</label>
+								<input id="scanningAlertArea" type="text" />
+								<div class="error errorArea">不能为空</div>
+							</div>
+						</div>
+						<div class="castBox labelBox">
+							<label for=""><i style="color: white;">*</i>演员:</label>
+							<input id="scanningAlertCast" type="text" />
+							<div class="error errorCast">不能为空</div>
+						</div>
+						<div class="cover castBox labelBox">
+							<label for=""><i>*</i>封面:</label>
+							<input readonly="readonly" id="scanningAlertInputImg" type="text" />
+							<div class="buttonbox">
+								<span class="isHasEdit mybtn imgFile">上传
+								<input type="file" accept="image/jpg,image/jpeg,image/png" name="" id="scanningAlertFileImg" value="" />
+								</span>
+								<button class="mybtn scanningAlertpreImg">预览</button>
+							</div>
+							<div class="error errorCover">不能为空</div>
+						</div>
+						
+						<div class="castBox labelBox" style="width: 100%;">
+							<label for=""><i style="color: white;">*</i>简介:</label>
+							<textarea id="scanningAlertInfo" name="" rows="" cols=""></textarea>
+							<div class="error errorIntroduct">不能为空</div>
+						</div>
+					</div>
+					<div class="videoBox fr">
+						<div class="video">
+							
+							<div class="myvideo" id="video">
+								<div class='pretitle'>视频预览</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main_bottom clearfix labelBox ">
+					<label for=""><i style="color: white;">*</i>资源:</label>
+					<div class="tableBox">
+						<ul class="ul_table">
+							<li class="theader clearfix">
+								<span style="width: 7%;">序号</span>
+								<span style="width: 60%;">地址URL</span>
+								<span style="width: 20%;">排序</span>
+								<span style="width: 13%;">预览</span>
+							</li>
+						</ul>
+						<ul class="ul_table ul_tbody URLList">
+
+						</ul>
+					</div>
+				</div>
+				<div class="savebuttonBox">
+					<button class="mybtn save">确定</button>
+					&nbsp;&nbsp;&nbsp;
+					<button class="mybtn cancle">取消</button>
+				</div>
+				<div class="scanningAlertImgBox">
+					<img class="cancelImg" src="../img/cancle.png?v=cf325ec93b" alt="" />
+					<img class="preImg" src="" alt="暂无图片" />
+				</div>
+			</div>
+		</div>
+		<div class="loadingAlert">
+			<img src="../img/loading.gif?v=d0c438ea4e"/>
+		</div>
+	</body>
+		<script src="../crypto/core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/hmac.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/sha256.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/enc-base64.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../js/plugins/jquery/jquery-3.2.1.min.js?v=c9f5aeeca3" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/plugins/jquery/jquery-1.10.2.min.js?v=e0e0559014" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common/config.js?v=c6b6dc5ca4" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/xcConfirm.js?v=a6850f5ac3" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common/common.js?v=3c9c940887" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/plugins/jquery.page.js?v=7d972c7ba3" type="text/javascript" charset="utf-8"></script>
+	<script src="../ckplayerX/ckplayer/ckplayer.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/managerSource.js?v=4ca81b4af2"></script>
+
+</html>

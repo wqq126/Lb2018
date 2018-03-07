@@ -1,0 +1,302 @@
+html {
+    height: 99%;
+}
+
+body {
+    font-family: "微软雅黑";
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 8px;
+}
+
+.boxSing {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+select {
+    font-size: 1em;
+}
+
+.contain {
+    height: 100%;
+    border: 1px solid #B4B4B4;
+    margin-left: 8px;
+    margin-right: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .header {
+        height: 4%;
+        color: #414141;
+        font-size: 1em;
+        position: relative;
+        border-bottom: 1px solid #b4b4b4;
+        background: -webkit-linear-gradient(#fffffe, #ededed);
+        background: -o-linear-gradient(#fffffe, #ededed);
+        background: -moz-linear-gradient(#fffffe, #ededed);
+        background: linear-gradient(#fffffe, #ededed);
+        span {
+            height: 20px;
+            line-height: 20px;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 30px;
+        }
+    }
+    .searchBox {
+        height: 9%;
+        font-size: 1em;
+        position: relative;
+        .selectbox {
+            display: inline-block;
+            width: 300px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            .title {
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                width: 80px;
+                text-align: center;
+            }
+            img {
+                position: absolute;
+                left: 240px;
+                width: 40px;
+                height: 40px;
+            }
+            input {
+                position: absolute;
+                top: 0;
+                left: 80px;
+                margin: 0;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                width: 200px;
+                height: 40px;
+                font-size: 1em;
+            }
+            select {
+                width: 200px;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                left: 80px;
+                z-index: 99;
+                opacity: 0;
+            }
+        }
+        .add_liveSource {
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            right: 20px;
+        }
+    }
+    .main {
+        width: 100%;
+        height: 80%;
+         padding: 0 20px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        .tableBox {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            padding-top: 10px;
+            padding-bottom: 50px;
+            height: 100%;
+            .ul_table {
+                width: 100%;
+                height: 5%;
+                font-size: 1em;
+                background: darkgray;
+                li {
+                    width: 100%;
+                    height: 100%;
+                    span {
+                        box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        float: left;
+                        display: inline-block;
+                        height: 100%;
+                        border-right: 1px solid white;
+                        text-indent: 10px;
+                        display: flex;
+                        align-items: center;
+                        white-space: nowrap;
+                    }
+                }
+                .theader {
+                    background: rgb(231, 237, 242);
+                }
+            }
+            
+        }
+    }
+}
+
+.alert {
+    display: none;
+    background: rgba(145, 145, 145, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .preview_video {
+        height: 40px;
+        position: relative;
+        top: 2px;
+    }
+    .alertMain {
+        width: 78%;
+        height: 70%;
+        min-width: 920px;
+        border: 1px solid #B4B4B4;
+        background: white;
+        position: absolute;
+        top: 15%;
+        left: 11%;
+        .title {
+            font-size: 1em;
+            height: 50px;
+            text-indent: 30px;
+            line-height: 50px;
+            color: #414141;
+            border-bottom: 1px solid #B4B4B4;
+            position: relative;
+        }
+        .canclealertImg {
+            z-index: 9999999;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        .fl {
+            width: 50%;
+            >div {
+                margin-top: 10px;
+                width: 100%;
+                label {
+                    display: inline-block;
+                    width: 120px;
+                    text-indent: 40px;
+                    color: #828282;
+                }
+                input {
+                    width: 200px;
+                    height: 40px;
+                }
+                p {
+                    height: 20px;
+                    color: red;
+                    text-indent: 130px;
+                    line-height: 20px;
+                }
+            }
+            .selectbox {
+                position: relative;
+                .boxSing;
+                select {
+                    width: 200px;
+                    height: 40px;
+                    position: absolute;
+                    top: 0;
+                    left: 125px;
+                    z-index: 99;
+                    opacity: 0;
+                    option{
+                        width: 200px;
+                        overflow: hidden;
+                    }
+                }
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 285px;
+                    width: 40px;
+                }
+            }
+            .filedivbox {
+                >span {
+                    display: inline-block;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    width: 60px;
+                    position: relative;
+                    top: 2px;
+                }
+                .fileBox {
+                    position: relative;
+                    input {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        opacity: 0;
+                    }
+                }
+            }
+            .buttonBox {
+                margin-top: 100px;
+                text-align: center;
+                button {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .fr {
+            height: 90%;
+            width: 47%;
+            background: darkgray;
+            position: relative;
+            video {
+                position: absolute;
+                width: 90%;
+                height: 80%;
+                top: 10%;
+                left: 5%;
+            }
+        }
+        .imgBox {
+            z-index: 999;
+            display: none;
+            border: 1px solid #B4B4B4;
+            background: white;
+            position: absolute;
+            left: 50%;
+            margin-left: -250px;
+            width: 500px;
+            height: 512px;
+            padding-top: 50px;
+            padding-left: 5%;
+            .cancleImg {
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            .previewImg {
+//              width: auto;
+//              height: auto;
+//              max-width: 90%;
+//              max-height: 90%;
+        width: 90%;
+                height: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+html {
+  height: 99%;
+}
+body {
+  font-family: "微软雅黑";
+  height: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+.boxSing {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+select {
+  font-size: 1em;
+}
+.contain {
+  height: 100%;
+  border: 1px solid #B4B4B4;
+  margin-left: 8px;
+  margin-right: 20px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contain .header {
+  height: 4%;
+  color: #414141;
+  font-size: 16px;
+  position: relative;
+  border-bottom: 1px solid #b4b4b4;
+  background: -webkit-linear-gradient(#fffffe, #ededed);
+  background: -o-linear-gradient(#fffffe, #ededed);
+  background: -moz-linear-gradient(#fffffe, #ededed);
+  background: linear-gradient(#fffffe, #ededed);
+}
+.contain .header span {
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 30px;
+}
+.contain .searchBox {
+  height: 9%;
+  font-size: 1em;
+  position: relative;
+  padding-left: 30px;
+}
+.contain .searchBox .selectbox {
+  position: relative;
+}
+.contain .searchBox .typeboxSearch {
+  margin-left: 100px;
+}
+.contain .searchBox input {
+  height: 40px;
+  width: 200px;
+  font-size: 1em;
+}
+.contain .searchBox img {
+  position: relative;
+  top: 16px;
+  left: -43px;
+  height: 40px;
+  width: 40px;
+}
+.contain .searchBox select {
+  position: absolute;
+  top: 15px;
+  right: 43px;
+  width: 200px;
+  height: 40px;
+  opacity: 0;
+}
+.contain .searchBox ul {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 43px;
+  width: 200px;
+  height: 300px;
+  background: white;
+  z-index: 99;
+  border: 1px solid #DDDDDD;
+  overflow-y: scroll;
+}
+.contain .searchBox ul option {
+  padding-left: 10px;
+}
+.contain .searchBox ul li {
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+.contain .searchBox ul li:hover {
+  background: #356DB2;
+}
+.contain .searchBox .title {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.125em;
+  color: #595959;
+}
+.contain .main {
+  width: 100%;
+  height: 80%;
+  padding: 0 20px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.contain .main .tableBox {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  height: 100%;
+}
+.contain .main .tableBox .ul_table {
+  width: 100%;
+  height: 5%;
+  font-size: 1em;
+  background: darkgray;
+}
+.contain .main .tableBox .ul_table li {
+  width: 100%;
+  height: 100%;
+}
+.contain .main .tableBox .ul_table li span {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  display: inline-block;
+  border-right: 1px solid white;
+  text-indent: 10px;
+  white-space: nowrap;
+  font-size: 1em;
+  height: 1.5em;
+  line-height: 1.5em;
+  position: relative;
+  top: 50%;
+  margin-top: -0.75em;
+}
+.contain .main .tableBox .ul_table .theader {
+  background: #e7edf2;
+}

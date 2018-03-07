@@ -1,0 +1,277 @@
+html {
+  height: 99%;
+}
+body {
+  font-family: "微软雅黑";
+  height: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+.boxSing {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+select {
+  font-size: 1em;
+}
+.contain {
+  height: 100%;
+  border: 1px solid #B4B4B4;
+  margin-left: 8px;
+  margin-right: 20px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.contain .header {
+  height: 4%;
+  color: #414141;
+  font-size: 16px;
+  position: relative;
+  border-bottom: 1px solid #b4b4b4;
+  background: -webkit-linear-gradient(#fffffe, #ededed);
+  background: -o-linear-gradient(#fffffe, #ededed);
+  background: -moz-linear-gradient(#fffffe, #ededed);
+  background: linear-gradient(#fffffe, #ededed);
+}
+.contain .header span {
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  left: 30px;
+}
+.contain .searchBox {
+  height: 9%;
+  font-size: 1em;
+  position: relative;
+  color: #595959;
+  padding-left: 30px;
+}
+.contain .searchBox .selectbox {
+  position: relative;
+}
+.contain .searchBox .selectbox img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 16px;
+  left: -43px;
+}
+.contain .searchBox .selectbox select {
+  position: absolute;
+  top: 15px;
+  right: 43px;
+  width: 200px;
+  height: 40px;
+  opacity: 0;
+}
+.contain .searchBox .selectbox ul {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 43px;
+  width: 200px;
+  height: 300px;
+  background: white;
+  overflow-y: scroll;
+  border: 1px solid #DDDDDD;
+  z-index: 99;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.contain .searchBox .selectbox ul li {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.contain .searchBox .selectbox ul li:hover {
+  background: #356DB2;
+}
+.contain .searchBox .selectbox input {
+  width: 200px;
+  height: 40px;
+}
+.contain .searchBox .selectbox #nameUl {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 43px;
+  width: 200px;
+  height: 300px;
+  overflow-y: scroll;
+  background: white;
+  border: 1px solid #DDDDDD;
+}
+.contain .searchBox .selectbox #nameUl li {
+  height: 40px;
+  text-indent: 10px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.contain .searchBox .selectbox #nameUl li:hover {
+  background: darkkhaki;
+}
+.contain .searchBox .add_liveSource {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.contain .main {
+  width: 100%;
+  height: 80%;
+  padding: 0 20px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.contain .main .tableBox {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  height: 100%;
+}
+.contain .main .tableBox .ul_table {
+  width: 100%;
+  height: 5%;
+  font-size: 1em;
+  background: darkgray;
+}
+.contain .main .tableBox .ul_table li {
+  width: 100%;
+  height: 100%;
+}
+.contain .main .tableBox .ul_table li span {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  display: inline-block;
+  border-right: 1px solid white;
+  text-indent: 10px;
+  -ms-flex-align: center;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 1em;
+  height: 1.5em;
+  line-height: 1.5em;
+  position: relative;
+  top: 50%;
+  margin-top: -0.75em;
+}
+.contain .main .tableBox .ul_table .theader {
+  background: #e7edf2;
+}
+.alert {
+  display: none;
+  background: rgba(145, 145, 145, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.alert .resetpas {
+  height: 40px;
+  position: relative;
+  top: 2px;
+}
+.alert .alertMain {
+  width: 30%;
+  border: 1px solid #B4B4B4;
+  background: white;
+  position: absolute;
+  left: 35%;
+  top: 100px;
+}
+.alert .alertMain .title {
+  font-size: 1em;
+  height: 50px;
+  text-indent: 30px;
+  line-height: 50px;
+  color: #414141;
+  border-bottom: 1px solid #B4B4B4;
+  position: relative;
+}
+.alert .alertMain .canclealertImg {
+  z-index: 9999999;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.alert .alertMain .fl {
+  width: 330;
+  position: relative;
+  left: 50%;
+  margin-left: -185px;
+}
+.alert .alertMain .fl > div {
+  margin-top: 10px;
+  width: 100%;
+}
+.alert .alertMain .fl > div label {
+  display: inline-block;
+  width: 120px;
+  text-indent: 40px;
+  color: #828282;
+}
+.alert .alertMain .fl > div input {
+  width: 200px;
+  height: 40px;
+}
+.alert .alertMain .fl > div p {
+  height: 20px;
+  color: red;
+  text-indent: 130px;
+  line-height: 20px;
+}
+.alert .alertMain .fl .selectbox {
+  position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.alert .alertMain .fl .selectbox ul {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 125px;
+  right: 43px;
+  width: 200px;
+  height: 300px;
+  background: white;
+  overflow-y: scroll;
+  border: 1px solid #DDDDDD;
+  z-index: 99;
+}
+.alert .alertMain .fl .selectbox ul option {
+  padding-left: 10px;
+}
+.alert .alertMain .fl .selectbox ul li {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.alert .alertMain .fl .selectbox ul li:hover {
+  background: #356DB2;
+}
+.alert .alertMain .fl .selectbox img {
+  position: absolute;
+  top: 0;
+  left: 285px;
+  width: 40px;
+}
+.alert .alertMain .fl .buttonBox {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.alert .alertMain .fl .buttonBox button {
+  margin-left: 20px;
+}

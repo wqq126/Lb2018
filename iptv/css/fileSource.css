@@ -1,0 +1,152 @@
+html {
+  height: 100%;
+}
+body {
+  font-family: "微软雅黑";
+  height: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+.contain {
+  border: 1px solid #B4B4B4;
+  margin-left: 8px;
+  margin-right: 20px;
+  padding-bottom: 50px;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.contain .step {
+  font-size: 16px;
+  color: #595959;
+  padding-left: 40px;
+  margin-top: 10px;
+}
+.contain .step .mybtn {
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+}
+.contain .step .showstep {
+  display: inline-block;
+  width: 60px;
+}
+.contain .step1 {
+  height: 50px;
+}
+.contain .step1 .download {
+  color: #0C4A8E;
+  cursor: pointer;
+}
+.contain .step1 .download:hover {
+  color: #0C4A8E;
+}
+.contain .step3 .scanning {
+  height: 36px;
+  line-height: 36px;
+  width: 120px !important;
+}
+.contain .step2 {
+  margin: 0;
+  height: 75%;
+}
+.contain .step2 .ftpupInfo {
+  margin-left: 60px;
+  height: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.contain .step2 .ftpTeacheImg {
+  background: darkcyan;
+  width: 70%;
+  height: 90%;
+}
+.contain .step2 .ftpTeacheImg img {
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+}
+.scaningAleart {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(145, 145, 145, 0.3);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.scaningAleart img {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+}
+.device {
+  height: 90%;
+  width: 60%;
+  padding: 30px 40px;
+  margin-top: 10px;
+  margin-left: 60px;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.device .arrow-left {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+}
+.device .arrow-right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -15px;
+  width: 30px;
+  height: 30px;
+}
+.swiper-container {
+  height: 90%;
+}
+.content-slide {
+  padding: 20px;
+  color: #fff;
+}
+.title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #fff;
+}
+.ftpImg {
+  height: 100%!important;
+  width: 100%!important;
+}

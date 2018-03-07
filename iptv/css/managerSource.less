@@ -1,0 +1,142 @@
+html {
+    height: 99%;
+}
+
+body {
+    font-family: "微软雅黑";
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 8px;
+}
+
+.boxSing {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+select {
+    font-size: 1em;
+}
+
+.contain {
+    height: 100%;
+    border: 1px solid #B4B4B4;
+    margin-left: 8px;
+    margin-right: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .header {
+        height: 4%;
+        color: #414141;
+        font-size: 1em;
+        position: relative;
+        border-bottom: 1px solid #b4b4b4;
+        background: -webkit-linear-gradient(#fffffe, #ededed);
+        background: -o-linear-gradient(#fffffe, #ededed);
+        background: -moz-linear-gradient(#fffffe, #ededed);
+        background: linear-gradient(#fffffe, #ededed);
+        span {
+            height: 20px;
+            line-height: 20px;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 30px;
+        }
+    }
+    .searchBox {
+        height: 9%;
+        font-size: 1em;
+        position: relative;
+        .typeboxSearch {
+            left: 280px;
+        }
+        >div {
+            display: inline-block;
+            width: 300px;
+            height: 40px;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            .title {
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                width: 80px;
+//              text-align: center;
+                text-indent: 20px;
+            }
+            img {
+                position: absolute;
+                left: 240px;
+                width: 40px;
+                height: 40px;
+            }
+            input {
+                position: absolute;
+                top: 0;
+                left: 80px;
+                margin: 0;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                width: 200px;
+                height: 40px;
+                font-size: 1em;
+            }
+            select {
+                width: 200px;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                left: 80px;
+                z-index: 99;
+                opacity: 0;
+            }
+        }
+    }
+    .main {
+        height: 80%;
+        width: 100%;
+        padding: 0 20px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        .tableBox {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            padding-top: 10px;
+            padding-bottom: 50px;
+            height: 100%;
+            .ul_table {
+                width: 100%;
+                height: 5%;
+                font-size: 1em;
+                li {
+                    width: 100%;
+                    height: 100%;
+                    span {
+                        box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        float: left;
+                        display: inline-block;
+                        height: 100%;
+                        border-right: 1px solid white;
+                        text-indent: 10px;
+                        display: flex;
+                        align-items: center;
+                        white-space: nowrap;
+                    }
+                }
+                .theader {
+                    background: rgb(231, 237, 242);
+                }
+            }
+        }
+    }
+}
+

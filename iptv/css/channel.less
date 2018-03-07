@@ -1,0 +1,164 @@
+html {
+    height: 99%;
+}
+
+body {
+    font-family: "微软雅黑";
+    height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 8px;
+}
+
+.boxSing {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+select {
+    font-size: 1em;
+}
+
+.contain {
+    height: 100%;
+    border: 1px solid #B4B4B4;
+    margin-left: 8px;
+    margin-right: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    .header {
+        height: 4%;
+        color: #414141;
+        font-size: 1em;
+        position: relative;
+        border-bottom: 1px solid #b4b4b4;
+        background: -webkit-linear-gradient(#fffffe, #ededed);
+        background: -o-linear-gradient(#fffffe, #ededed);
+        background: -moz-linear-gradient(#fffffe, #ededed);
+        background: linear-gradient(#fffffe, #ededed);
+        span {
+            height: 20px;
+            line-height: 20px;
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            left: 30px;
+        }
+    }
+    .buttonBox {
+        height: 9%;
+        font-size: 1em;
+        text-align: right;
+        position: relative;
+        button{
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            right: 20px;
+        }
+    }
+    .main {
+        height: 80%;
+        width: 100%;
+         padding: 0 20px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        .tableBox {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            padding-top: 10px;
+            padding-bottom: 50px;
+            height: 100%;
+            .ul_table {
+                width: 100%;
+                height: 5%;
+                font-size: 1em;
+                background: darkgray;
+                li {
+                    width: 100%;
+                    height: 100%;
+                    span {
+                        box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        -webkit-box-sizing: border-box;
+                        float: left;
+                        display: inline-block;
+                        height: 100%;
+                        border-right: 1px solid white;
+                        text-indent: 10px;
+                        display: flex;
+                        align-items: center;
+                        white-space: nowrap;
+                    }
+                }
+                .theader {
+                    background: rgb(231, 237, 242);
+                }
+            }
+            
+        }
+    }
+}
+
+.alert {
+    display: none;
+    background: rgba(145, 145, 145, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .alertMain {
+        width: 400px;
+        height: 300px;
+        border: 1px solid #B4B4B4;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -200px;
+        background: white;
+        .title {
+            position: relative;
+            font-size: 1em;
+            height: 50px;
+            text-indent: 30px;
+            line-height: 50px;
+            color: #414141;
+            border-bottom: 1px solid #B4B4B4;
+            margin-bottom: 20px;
+        }
+        .alertleft {
+            width: 100%;
+            label {
+                display: inline-block;
+                text-indent: 30px;
+                width: 100px;
+                height: 44px;
+                line-height: 44px;
+            }
+            input {
+                width: 160px;
+                height: 40px;
+            }
+            .errorMessage {
+                color: red;
+                height: 20px;
+                text-indent: 100px;
+                margin-top: 10px;
+            }
+            .buttonBox {
+                margin-top: 40px;
+                width: 100%;
+                text-align: center;
+                button:first-child {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+   
+}

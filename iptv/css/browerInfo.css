@@ -1,0 +1,141 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: "微软雅黑";
+}
+.boxSing {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.contain {
+  height: 100%;
+  min-width: 1400px;
+  min-height: 720px;
+  background: #E8E9EB;
+}
+.header {
+  padding-left: 12.5%;
+  padding-right: 40px;
+  color: #939393;
+  background: white;
+  height: 7%;
+}
+.header .fl {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  line-height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.header .fl span:first-child {
+  height: 1em;
+  line-height: 1em;
+  font-size: 1.8em;
+  padding-right: 25px;
+  border-right: 2px solid #939393;
+}
+.header .fl span:nth-child(2) {
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+.main {
+  margin-left: 12.5%;
+  width: 75%;
+  height: 70%;
+  background: white;
+  border: 1px solid #b5b5b5;
+  margin-top: 100px;
+  padding-top: 4%;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.main .box1 {
+  font-size: 16px;
+  padding-left: 60px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  width: 950px;
+  margin: 0 auto;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.main .box1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .box2 {
+  width: 950px;
+  height: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.main .box2 .imgBox:nth-child(2) {
+  margin: 0 53px;
+}
+.main .box2 .imgBox {
+  display: inline-block;
+  padding-top: 70px;
+  background: white;
+  height: 100%;
+  width: 120px;
+  text-align: center;
+  position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.main .box2 .imgBox div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -60px;
+  width: 120px;
+  height: 120px;
+  border: 1px solid #D7D7D7;
+  border-radius: 4px;
+}
+.main .box2 .imgBox div img {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: -35px;
+}
+.main .box2 .imgBox p {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #356DB2;
+}
+.main .box3 {
+  width: 950px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 80px;
+}
+.main .box3 p {
+  margin: 10px 0;
+}
+.main .box3 .step {
+  color: #356DB2;
+  margin-bottom: 20px;
+}

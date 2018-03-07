@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>日志管理</title>
+		<link rel="stylesheet" type="text/css" href="../css/xcConfirm.css?v=4bf4166437" />
+		<link rel="stylesheet" type="text/css" href="../css/basic.css?v=cf9b0dd03b" />
+		<link rel="stylesheet" type="text/css" href="../datetimepicker/jquery.datetimepicker.css" />
+		<link rel="stylesheet" type="text/css" href="../css/log.css?v=49f7e9f015" />
+	</head>
+
+	<body>
+		<div class="contain">
+			<div class="header">
+				<span>
+					日志查看
+				</span>
+			</div>
+			<div class="searchBox">
+				<span class="selectbox nameSearch">
+					<span class="title">用户名</span>
+				<input type="text" class="awesomplete" id="nameSearchInput" name="nameSearchInput" list='mylist'>
+				<img src="../img/search.png?v=3e3f5c76f7" id="searchLog" />
+				<ul id="nameSelect">
+					
+				</ul>
+				
+
+				</span>
+				<span class="selectbox startTime">
+					<span class="title">开始日期</span>
+				<input type="text" class="demo-input" placeholder="请选择日期" id="startTime">
+				</span>
+				<span class=" selectbox endTime">
+					<span class="title">结束日期</span>
+				<input type="text" class="demo-input" placeholder="请选择日期" id="endTime">
+				</span>
+				<span class="mybtn searchLog">搜索</span>
+				<img class="showdown" src="../../html/img/loading2.gif?v=805d952d3b" />
+			</div>
+			<div class="main">
+				<div class="tableBox">
+					<ul class="ul_table">
+						<li class="theader clearfix">
+							<span style="width: 7%;">序号</span>
+							<span style="width: 15%;">用户名</span>
+							<span style="width: 12%;">用户分组</span>
+							<span style="width: 10%;">类型</span>
+							<span style="width: 36%;">操作</span>
+							<span style="width: 20%;">操作时间</span>
+						</li>
+					</ul>
+					<ul class="ul_tbody">
+
+					</ul>
+				</div>
+			</div>
+			<div class="pages clearfix">
+				<div class="fl"> <span>共</span> <span class="count">0</span><span>条</span>
+					<span class="nowPage">1</span>/<span class="allPage">1</span>
+				</div>
+				<div class="fr">
+					<div class="page" style="height: 36px;"></div>
+				</div>
+			</div>
+		</div>
+		<div class="alert">
+			<div class="alertMain clearfix ">
+				<img class="canclealertImg cancle" src="../img/cancle.png?v=cf325ec93b" />
+				<p class="title">编辑直播频道</p>
+				<div class="fl">
+					<div style="margin-top: 30px;">
+						<label for="">名称:</label>
+						<input autofocus="autofocus" id="name" type="text" />
+						<p class="error errorName">不能为空</p>
+					</div>
+
+					<div class="selectbox">
+						<label for="">分组:</label>
+						<input readonly="readonly" id="group" type="text" />
+						<img src="../img/select-downNormal.png?v=9e90a801de" />
+						<p class="error errorGroup">不能为空</p>
+						<select id="groupSelect" name="">
+							<option selected value style="height: 0; font-size: 0;"></option>
+							<option disabled="disabled" value>请选择一个分组</option>
+						</select>
+					</div>
+
+					<div class="passwordBox">
+						<label for="">密码:</label>
+						<input id="password" type="password" />
+						<button class="mybtn resetpas">重置</button>
+						<p class="error errorPa">不能为空</span>
+					</div>
+
+					<div class="filedivbox">
+						<label for="">确认密码:</label>
+						<input id="okPassword" type="password" />
+						<p class="error errorokPa"></p>
+					</div>
+
+					<div class="buttonBox">
+						<button class="mybtn save">保存</button>
+						<button class="mybtn cancle">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="loadingAlert">
+			<img src="../img/loading.gif?v=d0c438ea4e" />
+		</div>
+	</body>
+	<script src="../crypto/core.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/hmac.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/sha256.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../crypto/enc-base64.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../js/plugins/jquery/jquery-3.2.1.min.js?v=c9f5aeeca3" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/plugins/jquery/jquery-1.10.2.min.js?v=e0e0559014" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common/config.js?v=c6b6dc5ca4" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/xcConfirm.js?v=a6850f5ac3" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/plugins/jquery.page.js?v=7d972c7ba3" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common/common.js?v=3c9c940887" type="text/javascript" charset="utf-8"></script>
+	<script src="../datetimepicker/build/jquery.datetimepicker.full.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="../jcFilter/js/awesomplete.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/log.js?v=77d2adbbf1" type="text/javascript" charset="utf-8"></script>
+
+</html>
